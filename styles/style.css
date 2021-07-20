@@ -90,9 +90,7 @@
 /*Description section*/
 
 /* TODO:
-  fix brief not center
-  fix main text should be further aligned right and space between all of the page
-  flexbox bug? probably forgot something. need to check again
+  check the devtools to see alignments in the page - important
   */
 
 .description{
@@ -119,9 +117,8 @@
 }
 
 .two-columns__main-text{
- /* width: 80%;
-  min-width: 784px;*/
-  width: 100%;
+  width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph{
@@ -168,35 +165,44 @@
 }
 
 /*TODO:
-  fix wrap
-  fix table buttons
-  fix center
-  finish tables
-  more?
+  check with devtools everything: center alignments margins paddings size
   */
 
 .table{
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
+  justify-content: center;
+  margin: auto;
+  justify-content: space-between;
 }
 
 .table__cell{
-  text-decoration: none;
+  margin-top: 60px;
+  width: 250px;
+  list-style: none;
 }
 
 .table__heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
 }
 
 .table__text{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 20px;
 }
+
+/*Feynman section*/
+
+
+
+
+
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements
 .header__square-pic {
   height: 568px;
