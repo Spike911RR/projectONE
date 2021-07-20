@@ -9,12 +9,83 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
+/* Header styles */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  background-color: #F2F2F2;
   /* parameters for the header section */
 }
+
+.logo{
+  background-image: url("/images/logo_place_header.png");
+  width: 154px;
+  height: 31px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.logo_place_header{
+  left: 64px;
+  top: 30px;
+}
+
+.header__title{
+  max-width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  margin-left: 64px;
+  justify-content: center;
+  z-index: 1;
+}
+
+.header__subtitle{
+  max-width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  z-index: 1;
+}
+
+.header__link{
+  color: #2F80ED
+}
+
+.header__square-pic{
+  position: absolute;
+  max-width: 568px;
+  max-height: 568px;
+  background-color: #2F80ED;
+  top: 64px;
+  right: 0;
+}
+
+.header__main-illustration{
+  width: 756px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
