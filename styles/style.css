@@ -10,7 +10,7 @@
 }
 
 
-/* Header styles */
+/* Header style code */
 .header {
   display: flex;
   flex-direction: column;
@@ -28,7 +28,6 @@
   review the background repeat - if not needed remove*/
 
 .logo{
-  background-image: url("/images/logo_place_header.png");
   width: 154px;
   height: 31px;
   position: absolute;
@@ -39,6 +38,7 @@
 }
 
 .logo_place_header{
+  background-image: url("/images/logo_place_header.png");
   left: 64px;
   top: 30px;
 }
@@ -87,7 +87,7 @@
   background-repeat: no-repeat;
 }
 
-/*Description section*/
+/*Description style code*/
 
 /* TODO:
   check the devtools to see alignments in the page - important
@@ -139,7 +139,7 @@
   font-size: 24px;
 }
 
-/*Digits section*/
+/*Digits style code*/
 
 .digits{
   margin-bottom: 100px;
@@ -196,23 +196,188 @@
   margin-top: 20px;
 }
 
-/*Feynman section*/
+/*Feynman style code*/
 
+.feynman{
+  height: 790px;
+  background-color: #F2F2F2;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
 
+.feynman__title{
+  width: 775px;
+  margin: 0 auto;
+  margin-top: 100px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
 
+.feynman__subtitle{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 70px auto 0 auto;
+  z-index: 1;
+}
 
+.feynman__link{
+  line-height: 51px;
+  font-weight: normal;
+  font-size: 36px;
+  color: #2F80ED;
+  text-decoration: none;
+  position: absolute;
+  top: 395px;
+  right: 48px;
+}
 
+.feynman__picture{
+  background-image: url("/images/feynman.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}*/
+.feynman-picture{
+  width: 867px;
+  height: 637px;
+}
 
-/* including elements with key-value modifiers */
+/* Kaufman style code */
+
+.kaufman{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #1F1F1F;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.section-title_theme_dark{
+  color: white;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.section-subtitle_theme_dark{
+  color: #F2F2F2;
+  margin-top: 20px;
+}
+
+.kaufman__triangle{
+  position: absolute;
+  right: -124px;
+  top: 0;
+  width: 660px;
+  height: 636px;
+  z-index: -1;
+}
+
+.table_theme_dark{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  margin-top: 80px;
+  padding-left: 0;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__heading_theme_dark{
+  color: #F2F2F2;
+  margin: 0;
+}
+
+.table__text_theme_dark{
+  color: #F2F2F2;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/*footer style code*/
+
+.footer{
+  min-height: 350px;
+  background-color: #1F1F1F;
+  display: flex;
+  color: #F2F2F2;
+  /*flex-direction: column;*/
+  /*justify-content: space-between;
+  background-repeat: no-repeat;*/
+}
+
+.footer__columns{
+  width: 90%;
+  margin: 60px auto 40px auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright{
+  flex-basis: 711px;
+}
+
+.logo_place_footer{
+  background-image: url("/images/logo_place_footer.png");
+  width: 183px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__author{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ /* margin: 18px 0;*/
+}
+
+.footer__list{
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.footer__columns_links{
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0 16px 0;
+}
+
+.footer__column_link{
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+.footer__column-heading{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer__social-icons{
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
 }
