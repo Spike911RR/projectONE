@@ -23,10 +23,6 @@
   font-weight: normal;
 }
 
-/*TODO:
-  check with devtools everything: center alignments margins paddings size
-  */
-
 .table{
   display: flex;
   flex-wrap: wrap;
