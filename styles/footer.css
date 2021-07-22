@@ -17,13 +17,13 @@
 
 .footer__column_content_copyright{
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_place_footer{
   background-image: url("../images/logo_place_footer.png");
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   width: 183px;
   height: 35px;
   background-repeat: no-repeat;
@@ -34,9 +34,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .footer__list{
