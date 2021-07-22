@@ -20,7 +20,7 @@
 }
 
 .logo_place_footer{
-  background-image: url("/images/logo_place_footer.png");
+  background-image: url("../images/logo_place_footer.png");
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
