@@ -158,14 +158,18 @@
   width: 920px;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  padding: 0;
+  margin: 0 auto;
+  padding-left: 0;
   align-items: baseline;
 }
 
 .cards__item{
   list-style: none;
-  margin-top: 60px;
+  margin: 60px 100px 0 0;
+}
+
+.cards__item:nth-child(3n){
+  margin-right: 0;
 }
 
 .cards__image{
@@ -191,6 +195,38 @@
   text-align: center;
 }
 
+/* TED stylesheet */
+
+.video__iframes{
+  display: flex;
+  justify-content: center;
+  position: static;
+  bottom: -70px;
+  top: 70px;
+  margin-top: 50px;
+  list-style: none;
+  margin-bottom: -50px;
+  padding: 0;
+}
+
+.video__iframe{
+  width: 515px;
+  height: 316px;
+}
+
+.video__iframe:nth-of-type(1){
+  margin-right: 20px;
+  border: none;
+}
+
+/* Oakley */
+
+.oakley{
+  padding: 160px 0 80px 0;
+  background-color: #F2F2F2;
+}
+
+
 /*Style code for the facts and figures section*/
 
 .digits{
@@ -200,7 +236,7 @@
 .section-title{
   width: 60%;
   text-align: center;
-  margin: 0 auto 20px auto;
+  margin: 100px auto 20px auto;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -304,14 +340,14 @@
 
 .container{
   width: 80%;
-  margin: 0 auto 0 auto
+  margin: auto;
 }
 
 .khan__author{
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
-  padding: 100px 0 0 0;
+  padding: 105px 0 0 0;
   margin: 0;
 }
 
@@ -342,6 +378,28 @@
   font-weight: normal;
   font-size: 24px;
   margin: 0;
+  margin-bottom: 68px;
+}
+
+.khan__book-container{
+  display: flex;
+  align-items: flex-start;
+}
+
+.khan__book-pic{
+  width: 620px;
+  height: 608px;
+  margin-right: 48px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.khan__buy-link{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2F80ED;
+  text-decoration: none;
 }
 
 /* Style code for the part of the page about the Kaufman principles */
